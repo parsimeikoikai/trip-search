@@ -26,7 +26,6 @@ const TripSearchForm: React.FC<TripSearchFormProps> = ({ onSearch, initialParams
     const dispatch = useDispatch();
 
     useEffect(() => {
-        console.log("initialParams", initialParams);
         setKeyword(initialParams.keyword);
         setIncludeCanceled(initialParams.includeCanceled);
         setTime(initialParams.time ?? 'any');
